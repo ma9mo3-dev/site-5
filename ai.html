@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الذكاء الاصطناعي - taeh medical</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- زر القائمة -->
+  <button id="menu-toggle" class="menu-btn"><i class="fas fa-bars"></i></button>
+
+  <!-- الشريط الجانبي -->
+  <div id="sidebar" class="sidebar">
+    <ul>
+      <li><a href="dashboard.html"><i class="fas fa-home"></i> الرجوع للوحة التحكم</a></li>
+      <li><a href="food.html"><i class="fas fa-utensils"></i> الغذاء الصحي</a></li>
+      <li><a href="https://wa.me/212600000000" target="_blank"><i class="fas fa-user"></i> المطور</a></li>
+      <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج</a></li>
+    </ul>
+  </div>
+
+  <!-- واجهة الذكاء الاصطناعي -->
+  <div class="main-content">
+    <h1>الطبيب الذكي</h1>
+    <p>اسأل أي سؤال صحي للحصول على استشارة من الذكاء الاصطناعي 👨‍⚕️</p>
+
+    <div class="ai-chat-box">
+      <textarea id="question" placeholder="مثال: عندي صداع متكرر، ما السبب؟" rows="3"></textarea>
+      <button id="ask-ai">إرسال</button>
+
+      <div id="ai-response" class="ai-response-box">
+        <p><strong>الرد سيظهر هنا...</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="ai.js"></script>
+</body>
+    </html>
