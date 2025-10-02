@@ -1,0 +1,192 @@
+/* الخط الأساسي */
+* {
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+}
+
+/* الجسم */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left, #141e30, #243b55);
+  color: #f1f1f1;
+}
+
+/* واجهات */
+.profile, .main-content {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #1e1e2f;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* العناوين */
+h1 {
+  font-size: 28px;
+  color: #00e5ff;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #00e5ff;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/* الفقرات */
+.bio, p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* مدخلات */
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: #2a2a40;
+  border: 1px solid #444;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+}
+
+/* الأزرار */
+button {
+  background: #00e5ff;
+  color: #000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #00bcd4;
+}
+
+/* الشريط الجانبي */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 250px;
+  height: 100%;
+  background: #1c1c2e;
+  padding: 20px;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.5);
+  transition: 0.4s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 20px 0;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #00e5ff;
+}
+
+/* زر القائمة */
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #00e5ff;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* عند تفعيل القائمة */
+.sidebar.active {
+  right: 0;
+}
+
+/* المبيانات */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.stat-card {
+  background: #2e2e45;
+  padding: 20px;
+  border-radius: 15px;
+  width: 30%;
+  min-width: 150px;
+  margin: 10px;
+  text-align: center;
+}
+
+.stat-card h3 {
+  color: #00e5ff;
+  margin-bottom: 10px;
+}
+
+.stat-card div {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* الردود */
+.ai-response-box {
+  background: #2d2d44;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  min-height: 80px;
+  text-align: right;
+  color: #ddd;
+}
+
+/* التحليل الغذائي */
+.ai-chat-box {
+  margin-top: 20px;
+}
+
+/* قسم التحدي */
+.challenge-section {
+  margin-top: 30px;
+}
+
+/* المبيان */
+.chart-section {
+  margin-top: 40px;
+  background: #2e2e45;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+  .stat-card {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+  }
